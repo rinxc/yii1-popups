@@ -1,0 +1,39 @@
+.popups.blowup {
+    z-index: 0;
+    transform: scale(1);
+}
+
+.popups.blowup .popups-background {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.popups.blowup .popups-background .popups-container {
+    animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.popups.blowup.out {
+    animation: blowUpModalTwo 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+
+@keyframes blowUpModal {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes blowUpModalTwo {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}

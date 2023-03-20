@@ -1,0 +1,34 @@
+2023/03/13 16:57:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'popup.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2023/03/13 16:57:26 [error] [exception.ParseError] ParseError: syntax error, unexpected ''id_users_groups'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\OpenServer2\domains\popups\protected\migrations\m230313_130402_users.php:24
+Stack trace:
+#0 D:\OpenServer2\domains\popups\yii\cli\commands\MigrateCommand.php(414): MigrateCommand->instantiateMigration('m230313_130402_...')
+#1 D:\OpenServer2\domains\popups\yii\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m230313_130402_...')
+#2 [internal function]: MigrateCommand->actionUp(Array)
+#3 D:\OpenServer2\domains\popups\yii\console\CConsoleCommand.php(178): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#4 D:\OpenServer2\domains\popups\yii\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#5 D:\OpenServer2\domains\popups\yii\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#6 D:\OpenServer2\domains\popups\yii\base\CApplication.php(185): CConsoleApplication->processRequest()
+#7 D:\OpenServer2\domains\popups\yii\yiic.php(33): CApplication->run()
+#8 D:\OpenServer2\domains\popups\protected\yiic.php(7): require_once('D:\\OpenServer2\\...')
+#9 {main}
+---
+2023/03/20 18:53:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'popup.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2023/03/20 18:53:39 [error] [php] include(Users.php): failed to open stream: No such file or directory (D:\OpenServer2\domains\popups\yii\YiiBase.php:463)
+Stack trace:
+#0 D:\OpenServer2\domains\popups\yii\YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 D:\OpenServer2\domains\popups\protected\migrations\m230313_130402_users.php(20): spl_autoload_call()
+#3 D:\OpenServer2\domains\popups\yii\db\CDbMigration.php(53): m230313_130402_users->safeUp()
+#4 D:\OpenServer2\domains\popups\yii\cli\commands\MigrateCommand.php(415): m230313_130402_users->up()
+#5 D:\OpenServer2\domains\popups\yii\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp()
+#6 unknown(0): MigrateCommand->actionUp()
+#7 D:\OpenServer2\domains\popups\yii\console\CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#8 D:\OpenServer2\domains\popups\yii\console\CConsoleCommandRunner.php(71): MigrateCommand->run()
+#9 D:\OpenServer2\domains\popups\yii\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#10 D:\OpenServer2\domains\popups\yii\base\CApplication.php(185): CConsoleApplication->processRequest()
+#11 D:\OpenServer2\domains\popups\yii\yiic.php(33): CConsoleApplication->run()
+#12 D:\OpenServer2\domains\popups\protected\yiic.php(7): require_once()
+
+2023/03/20 18:55:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'popup.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2023/03/20 18:57:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'popup.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2023/03/20 19:37:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'popup.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
